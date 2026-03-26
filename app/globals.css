@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  
+  /* Brand Colors - High-End AI Theme */
+  --color-bg-deep: #ffffff;
+  --color-bg-surface: #f8fafc;
+  --color-bg-elevated: #f1f5f9;
+  
+  /* Primary Palette */
+  --color-brand-red: #e63946;
+  --color-brand-red-light: #ff4d4d;
+  --color-brand-red-dark: #991b1b;
+  
+  --color-brand-black: #050810;
+  --color-brand-black-light: #111827;
+  --color-brand-black-deep: #0a0f1a;
+
+  /* Secondary / Accent Colors */
+  --color-accent-teal: #00e5cc;
+  --color-accent-teal-dark: #14b8a6;
+  --color-accent-slate: #8892b0;
+  --color-accent-slate-dark: #5a6480;
+  
+  /* Mapping to existing utility names for compatibility */
+  --color-coral-bright: var(--color-brand-red);
+  --color-coral-mid: var(--color-brand-red-dark);
+  --color-coral-dark: var(--color-brand-black);
+  
+  --color-cyan-bright: var(--color-accent-teal);
+  --color-cyan-mid: var(--color-accent-teal-dark);
+  
+  /* Text Colors */
+  --color-text-primary: var(--color-brand-black);
+  --color-text-secondary: var(--color-brand-black-light);
+  --color-text-muted: var(--color-accent-slate);
+  
+  /* Borders */
+  --color-border-subtle: #e2e8f0;
+  --color-border-accent: var(--color-accent-slate-dark);
+  
+  --color-surface-card: #ffffff;
+  --color-surface-card-strong: #f8fafc;
+
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.08);
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #e5e7eb;
+    border-radius: 20px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #d1d5db;
+  }
+
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-text-secondary antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-text-primary;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-subtle);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Capture Branding */
+.branding-top {
+  display: var(--branding-display-top, none) !important;
+}
+
+.branding-bottom {
+  display: var(--branding-display-bottom, none) !important;
+}
+
+.download-btn {
+  display: var(--download-btn-display, flex) !important;
+}
+
+.capture-container.is-capturing {
+  width: 1280px !important;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+.capture-container.is-capturing .overflow-x-auto {
+  overflow: visible !important;
+}
