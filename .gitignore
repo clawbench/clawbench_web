@@ -33,3 +33,6 @@ temp.txt
 
 # OS
 Thumbs.db
+
+# TypeScript
+tsconfig.tsbuildinfo
