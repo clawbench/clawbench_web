@@ -14,7 +14,16 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "ClawBench | Independent LLM Agent Evaluation & Benchmarks",
-  description: "An in-depth benchmark dedicated to evaluating LLM Agents. Built on an isolated sandbox environment with 30 advanced tasks, it comprehensively covers five core business scenarios: office collaboration, information retrieval, content creation, data analysis, and software engineering.。",
+  description: "An in-depth benchmark dedicated to evaluating LLM Agents. Built on an isolated sandbox environment with 30 advanced tasks, it comprehensively covers five core business scenarios: office collaboration, information retrieval, content creation, data analysis, and software engineering.",
+  icons: {
+    icon: [
+      { url: "/logo-transparent.png" },
+      { url: "/logo-transparent.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo-transparent.png", sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: [{ url: "/logo-transparent.png" }],
+    apple: [{ url: "/logo-black.png" }],
+  },
 };
 
 export default function RootLayout({
