@@ -91,7 +91,7 @@ export function DimensionsView({ benchmarkData, onModelClick, onDownload }: Dime
           {/* Download Button in top right of card content */}
           <div className="absolute top-2 right-6 z-20">
             <button 
-              onClick={() => onDownload('dimensions-card', `dimensions-${activeTab.toLowerCase().replace(/ /g, '-')}`)}
+              onClick={() => onDownload('dimensions-card', `clawbench-${activeTab.toLowerCase().replace(/ /g, '-')}`)}
               className="download-btn flex items-center justify-center bg-brand-black/60 backdrop-blur-sm text-white rounded-lg p-2.5 hover:bg-brand-red transition-all cursor-pointer shadow-lg shadow-brand-black/10"
               title="Download Image"
             >

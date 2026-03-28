@@ -113,8 +113,7 @@ export default function Dashboard({ initialData }: { initialData: BenchmarkData[
     try {
       const dataUrl = await domToPng(element, {
         backgroundColor: '#ffffff',
-        scale: 2,
-        quality: 1,
+        scale: 1.5,
         features: {
           removeControlCharacter: true,
         },
@@ -124,7 +123,6 @@ export default function Dashboard({ initialData }: { initialData: BenchmarkData[
           }
         },
         filter: (node: any) => {
-          // Exclude download buttons and tooltips from the capture
           if (node.classList?.contains('download-btn')) return false;
           if (node.classList?.contains('recharts-tooltip-wrapper')) return false;
           return true;
