@@ -101,6 +101,11 @@ export function DimensionsView({ benchmarkData, onModelClick, onDownload }: Dime
 
           {/* Chart Area */}
           <div className="relative mt-4 pb-4">
+            {/* Dynamic Category Title */}
+            <h3 className="text-xl font-bold text-text-primary tracking-tight mb-8">
+              {activeTab}
+            </h3>
+            
             <div className="relative">
               {/* Y-axis grid lines */}
               <div className="absolute top-0 left-0 right-0 h-[180px] flex flex-col justify-between pointer-events-none z-0">
