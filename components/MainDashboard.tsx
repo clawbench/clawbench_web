@@ -77,6 +77,16 @@ export default function Dashboard({ initialData }: { initialData: BenchmarkData[
     setIsMounted(true);
   }, []);
 
+  const latestUpdateDate = useMemo(() => {
+    const dates = benchmarkData.map(m => m.updatedDate || '03/27/2026');
+    const sortedDates = dates.sort((a, b) => {
+      const [aMonth, aDay, aYear] = a.split('/').map(Number);
+      const [bMonth, bDay, bYear] = b.split('/').map(Number);
+      return new Date(aYear, aMonth - 1, aDay).getTime() - new Date(bYear, bMonth - 1, bDay).getTime();
+    });
+    return sortedDates[sortedDates.length - 1];
+  }, []);
+
   useEffect(() => {
     if (selectedModel) {
       window.scrollTo(0, 0);
@@ -375,7 +385,7 @@ export default function Dashboard({ initialData }: { initialData: BenchmarkData[
               </button>
             </div>
             <div className="hidden sm:block h-4 w-px bg-border-subtle" />
-            <span className="text-text-muted text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Updated 03/23/2026</span>
+            <span className="text-text-muted text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Updated {latestUpdateDate}</span>
           </div>
         </div>
 

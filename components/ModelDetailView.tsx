@@ -138,7 +138,7 @@ export const ModelDetailView = ({
             </div>
             
             <div className="flex items-center gap-2">
-              <span className="text-text-muted text-[10px] font-bold uppercase tracking-widest">Updated 03/23/2026</span>
+              <span className="text-text-muted text-[10px] font-bold uppercase tracking-widest">Updated {selectedModel.updatedDate || '03/27/2026'}</span>
             </div>
           </div>
         </div>

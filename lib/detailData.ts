@@ -463,6 +463,12 @@ const SPECIAL_MODEL_TASK_SCORES: Record<string, Record<string, number>> = {
   },
   "Step 3.5 Flash": {
     "task_sq_01_meeting_coordination": 100, "task_sq_02_weather_check": 100, "task_sq_03_meeting_summary": 93.33, "task_sq_04_interview_invitation": 100, "task_sq_05_travel_reimbursement": 85, "task_sq_06_onboarding_asset_provisioning": 70, "task_sq_07_stock_price_research": 0, "task_sq_08_email_retrieval": 98.8, "task_sq_09_news_briefing": 18.6, "task_sq_10_report_comprehension": 100, "task_sq_11_market_research": 97, "task_sq_12_long_term_memory_retrieval": 97.5, "task_sq_13_blog_writting": 90, "task_sq_14_report_summary": 94.5, "task_sq_15_content_transformation": 90, "task_sq_16_script_creation": 95, "task_sq_17_pitch_deck_structuring": 88.89, "task_sq_18_content_audit": 95.5, "task_sq_19_data_cleaning_etl": 96.25, "task_sq_20_data_integration": 100, "task_sq_21_data_anomaly_detection": 95, "task_sq_22_visual_reporting": 100, "task_sq_23_pii_redaction": 87.5, "task_sq_24_sales_forecasting": 85.42, "task_sq_25_log_triage": 100, "task_sq_26_api_config_setup": 75, "task_sq_27_enviroment_provisioning": 87.5, "task_sq_28_e2e_scripting": 100, "task_sq_29_bug_diagnosis_and_fix": 87.5, "task_sq_30_code_refactoring": 20
+  },
+  "GLM-5V-Turbo": {
+    "task_sq_01_meeting_coordination": 100, "task_sq_02_weather_check": 100, "task_sq_03_meeting_summary": 86.67, "task_sq_04_interview_invitation": 92.5, "task_sq_05_travel_reimbursement": 85, "task_sq_06_onboarding_asset_provisioning": 70, "task_sq_07_stock_price_research": 100, "task_sq_08_email_retrieval": 100, "task_sq_09_news_briefing": 92.13, "task_sq_10_report_comprehension": 100, "task_sq_11_market_research": 50, "task_sq_12_long_term_memory_retrieval": 97.5, "task_sq_13_blog_writting": 87, "task_sq_14_report_summary": 71, "task_sq_15_content_transformation": 100, "task_sq_16_script_creation": 97, "task_sq_17_pitch_deck_structuring": 89.5, "task_sq_18_content_audit": 96.5, "task_sq_19_data_cleaning_etl": 94.5, "task_sq_20_data_integration": 100, "task_sq_21_data_anomaly_detection": 90.44, "task_sq_22_visual_reporting": 100, "task_sq_23_pii_redaction": 100, "task_sq_24_sales_forecasting": 88.67, "task_sq_25_log_triage": 100, "task_sq_26_api_config_setup": 75, "task_sq_27_enviroment_provisioning": 62.5, "task_sq_28_e2e_scripting": 100, "task_sq_29_bug_diagnosis_and_fix": 87.5, "task_sq_30_code_refactoring": 90
+  },
+  "Qwen3.6-Plus": {
+    "task_sq_01_meeting_coordination": 100, "task_sq_02_weather_check": 100, "task_sq_03_meeting_summary": 86.67, "task_sq_04_interview_invitation": 100, "task_sq_05_travel_reimbursement": 100, "task_sq_06_onboarding_asset_provisioning": 70, "task_sq_07_stock_price_research": 0, "task_sq_08_email_retrieval": 96, "task_sq_09_news_briefing": 96.4, "task_sq_10_report_comprehension": 100, "task_sq_11_market_research": 95, "task_sq_12_long_term_memory_retrieval": 44, "task_sq_13_blog_writting": 30, "task_sq_14_report_summary": 82, "task_sq_15_content_transformation": 94, "task_sq_16_script_creation": 98, "task_sq_17_pitch_deck_structuring": 90.69, "task_sq_18_content_audit": 96.5, "task_sq_19_data_cleaning_etl": 91, "task_sq_20_data_integration": 96.5, "task_sq_21_data_anomaly_detection": 95.5, "task_sq_22_visual_reporting": 100, "task_sq_23_pii_redaction": 91.5, "task_sq_24_sales_forecasting": 88.67, "task_sq_25_log_triage": 100, "task_sq_26_api_config_setup": 75, "task_sq_27_enviroment_provisioning": 87.5, "task_sq_28_e2e_scripting": 100, "task_sq_29_bug_diagnosis_and_fix": 87.5, "task_sq_30_code_refactoring": 80
   }
 };
 
@@ -571,6 +577,12 @@ const SPECIAL_MODEL_CATEGORY_SCORES: Record<string, Record<string, number>> = {
   },
   "Step 3.5 Flash": {
     "Office Collaboration": 91.39, "Information Retrieval and Research": 68.65, "Content Creation": 92.31, "Data Processing and Analysis": 94.03, "Software Engineering": 78.33
+  },
+  "GLM-5V-Turbo": {
+    "Office Collaboration": 89.03, "Information Retrieval and Research": 89.94, "Content Creation": 90.17, "Data Processing and Analysis": 95.6, "Software Engineering": 85.83
+  },
+  "Qwen3.6-Plus": {
+    "Office Collaboration": 92.78, "Information Retrieval and Research": 71.9, "Content Creation": 81.86, "Data Processing and Analysis": 93.86, "Software Engineering": 88.33
   }
 };
 
